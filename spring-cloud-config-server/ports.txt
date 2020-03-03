@@ -20,3 +20,9 @@ create new file under it limits-service.properties
 git add -A
 git commit -m "adding limits-service.properties"
 git push
+
+now in spring-cloud-config-server\src\main\resources\application.properties
+add property
+spring.cloud.config.server.git.uri=kaushalece81/microservices/tree/master/git-localconfig-repo
+
+use @EnableConfigServer  in main class
